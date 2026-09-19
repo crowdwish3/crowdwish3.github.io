@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>丝袜社区-精选穿搭指南与互动交流平台</title>
+    <meta name="description" content="丝袜社区提供专业的丝袜穿搭技巧分享、材质选购指南及美腿展示互动交流。汇聚时尚达人、穿搭博主，打造最懂丝袜爱好者的线上聚集地。">
+    <meta name="keywords" content="丝袜社区,丝袜穿搭,美腿,丝袜选购,丝袜评测,美腿摄影">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #d4a373;
+            --primary-dark: #b08968;
+            --secondary-color: #faedcd;
+            --text-dark: #2c2c2c;
+            --text-light: #666;
+            --bg-body: #fcfcfc;
+            --bg-card: #ffffff;
+            --border-radius: 12px;
+            --spacing-unit: 1rem;
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-dark);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        /* Layout Utilities */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        .section-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-left: 1rem;
+            color: var(--text-dark);
+        }
+
+        .section-title::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 10%;
+            height: 80%;
+            width: 4px;
+            background-color: var(--primary-color);
+            border-radius: 2px;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--bg-card);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--primary-dark);
+            letter-spacing: -0.5px;
+        }
+
+        .logo span {
+            color: var(--text-dark);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            font-weight: 500;
+            font-size: 1rem;
+            color: var(--text-dark);
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        .header-actions {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .btn {
+            padding: 0.5rem 1.2rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            border: none;
+        }
+
+        .btn-outline {
+            border: 1px solid var(--primary-color);
+            color: var(--primary-color);
+            background: transparent;
+        }
+
+        .btn-outline:hover {
+            background: var(--secondary-color);
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: #fff;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-dark);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 3rem 0;
+            background: linear-gradient(135deg, #fff8f0 0%, #fff 100%);
+        }
+
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .hero-content h1 {
+            font-size: 2.5rem;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+
+        .hero-content p {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            margin-bottom: 2rem;
+        }
+
+        .hero-tags {
+            display: flex;
+            gap: 0.8rem;
+            margin-bottom: 2rem;
+        }
+
+        .tag {
+            background-color: rgba(212, 163, 115, 0.15);
+            color: var(--primary-dark);
+            padding: 0.3rem 0.8rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        .hero-image {
+            position: relative;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 350px;
+            border-radius: var(--border-radius);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        /* Main Content */
+        main {
+            padding: 3rem 0;
+        }
+
+        /* Categories */
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .category-card {
+            background: var(--bg-card);
+            padding: 1.5rem;
+            border-radius: var(--border-radius);
+            text-align: center;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+            transition: transform 0.2s;
+            border: 1px solid transparent;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--secondary-color);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        .cat-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .cat-title {
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        /* Gallery Grid */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            margin-bottom: 3rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            aspect-ratio: 3/4;
+            cursor: pointer;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            padding: 1rem;
+            color: #fff;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .overlay-title {
+            font-size: 0.95rem;
+            font-weight: 600;
+        }
+
+        .overlay-author {
+            font-size: 0.8rem;
+            opacity: 0.9;
+        }
+
+        /* Article List */
+        .article-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .article-card {
+            display: flex;
+            background: var(--bg-card);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+            transition: box-shadow 0.2s;
+        }
+
+        .article-card:hover {
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        .article-thumb {
+            width: 240px;
+            flex-shrink: 0;
+        }
+
+        .article-content {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .article-meta {
+            font-size: 0.85rem;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .article-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--text-dark);
+        }
+
+        .article-excerpt {
+            color: var(--text-light);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .article-footer {
+            margin-top: auto;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            font-size: 0.85rem;
+            color: #999;
+        }
+
+        /* Interaction Bar */
+        .interaction-bar {
+            background-color: var(--secondary-color);
+            padding: 2rem;
+            border-radius: var(--border-radius);
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .interaction-bar h3 {
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+
+        .interaction-btns {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #f5f5f5;
+            padding: 3rem 0;
+            margin-top: 3rem;
+            border-top: 1px solid #eee;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-col h4 {
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+
+        .footer-col ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-col ul li a {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--primary-color);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            padding-top: 2rem;
+            border-top: 1px solid #e0e0e0;
+            color: #999;
+            font-size: 0.85rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero-image {
+                order: -1;
+            }
+            .gallery-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .article-thumb {
+                width: 180px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                display: none; /* Simplified for mobile */
+            }
+            .header-actions .btn {
+                display: none;
+            }
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .article-card {
+                flex-direction: column;
+            }
+            .article-thumb {
+                width: 100%;
+                height: 200px;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+            .section-title {
+                font-size: 1.5rem;
+            }
+            .hero-content h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container header-inner">
+        <a href="#" class="logo">丝袜<span>社区</span></a>
+        <nav>
+            <ul>
+                <li><a href="#">首页</a></li>
+                <li><a href="#">穿搭指南</a></li>
+                <li><a href="#">美腿摄影</a></li>
+                <li><a href="#">材质评测</a></li>
+                <li><a href="#">达人专区</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <button class="btn btn-outline">登录</button>
+            <button class="btn btn-primary">注册</button>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-grid">
+                <div class="hero-content">
+                    <div class="hero-tags">
+                        <span class="tag">#显瘦穿搭</span>
+                        <span class="tag">#质感分享</span>
+                        <span class="tag">#风格交流</span>
+                    </div>
+                    <h1>探索丝袜的无限魅力，发现属于你的时尚风格</h1>
+                    <p>汇聚全网优质穿搭博主与摄影爱好者，提供从材质选购、搭配技巧到美腿摄影的全方位交流平台。在这里，每一双丝袜都有它的故事。</p>
+                    <div class="interaction-btns">
+                        <button class="btn btn-primary">浏览作品</button>
+                        <button class="btn btn-outline">发布话题</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="https://picsum.photos/seed/stocking1/600/400" alt="时尚丝袜穿搭展示">
+                </div>
+            </div>
+        </section>
+
+        <!-- Categories -->
+        <section>
+            <h2 class="section-title">热门分类</h2>
+            <div class="category-grid">
+                <a href="#" class="category-card">
+                    <span class="cat-icon">🧦</span>
+                    <div class="cat-title">薄丝/肉色</div>
+                </a>
+                <a href="#" class="category-card">
+                    <span class="cat-icon">🖤</span>
+                    <div class="cat-title">黑丝/深色</div>
+                </a>
+                <a href="#" class="category-card">
+                    <span class="cat-icon">🎨</span>
+                    <div class="cat-title">花纹/图案</div>
+                </a>
+                <a href="#" class="category-card">
+                    <span class="cat-icon">✨</span>
+                    <div class="cat-title">渔网/蕾丝</div>
+                </a>
+                <a href="#" class="category-card">
+                    <span class="cat-icon">🧵</span>
+                    <div class="cat-title">连裤袜/过膝</div>
+                </a>
+                <a href="#" class="category-card">
+                    <span class="cat-icon">👟</span>
+                    <div class="cat-title">鞋子搭配</div>
+                </a>
+                <a href="#" class="category-card">
+                    <span class="cat-icon">📸</span>
+                    <div class="cat-title">摄影技巧</div>
+                </a>
+                <a href="#" class="category-card">
+                    <span class="cat-icon">💬</span>
+                    <div class="cat-title">穿搭问答</div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section>
+            <h2 class="section-title">精选图集</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://picsum.photos/seed/leg1/300/400" alt="美腿展示">
+                    <div class="gallery-overlay">
+                        <div class="overlay-title">职场OL风</div>
+                        <div class="overlay-author">摄影师：光影</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://picsum.photos/seed/leg2/300/400" alt="美腿展示">
+                    <div class="gallery-overlay">
+                        <div class="overlay-title">夏日清凉</div>
+                        <div class="overlay-author">博主：小A</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://picsum.photos/seed/leg3/300/400" alt="美腿展示">
+                    <div class="gallery-overlay">
+                        <div class="overlay-title">复古穿搭</div>
+                        <div class="overlay-author">博主：Vintage</div>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://picsum.photos/seed/leg4/300/400" alt="美腿展示">
+                    <div class="gallery-overlay">
+                        <div class="overlay-title">质感黑丝</div>
+                        <div class="overlay-author">摄影师：陈导</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interaction Bar -->
+        <div class="interaction-bar">
+            <h3>加入丝袜社区，分享你的穿搭心得</h3>
+            <p style="color: #666; margin-bottom: 1.5rem;">已有超过 50,000+ 穿搭爱好者在这里交流</p>
+            <div class="interaction-btns">
+                <button class="btn btn-primary" style="background: #fff; color: var(--primary-color);">立即发帖</button>
+                <button class="btn btn-outline" style="border-color: #fff; color: #fff;">查看排行榜</button>
+            </div>
+        </div>
+
+        <!-- Article List -->
+        <section>
+            <h2 class="section-title">深度指南</h2>
+            <div class="article-list">
+                <article class="article-card">
+                    <div class="article-thumb">
+                        <img src="https://picsum.photos/seed/fabric1/400/300" alt="丝袜材质">
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">材质评测 · 2天前</div>
+                        <h3 class="article-title">如何辨别丝袜的材质与垂坠感？一篇选购避坑指南</h3>
+                        <p class="article-excerpt">尼龙、氨纶、天鹅绒……面对琳琅满目的材质，新手往往无从下手。本文将从弹性、耐磨性及舒适度三个维度，为您详细解析不同材质丝袜的特点与适用场景，助您选到最合适的那一双。</p>
+                        <div class="article-footer">
+                            <span>👁️ 1.2k 阅读</span>
+                            <span>💬 86 评论</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="article-thumb">
+                        <img src="https://picsum.photos/seed/outfit1/400/300" alt="穿搭技巧">
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">穿搭技巧 · 5天前</div>
+                        <h3 class="article-title">小个子女生如何利用丝袜修饰腿型与比例？</h3>
+                        <p class="article-excerpt">丝袜不仅是装饰，更是修饰身材的神器。通过选择高腰线搭配、深色系显瘦技巧以及鞋袜同色原则，轻松拉长腿部线条，打造大长腿既视感。本文提供三套适合不同季节的实用搭配方案。</p>
+                        <div class="article-footer">
+                            <span>👁️ 3.5k 阅读</span>
+                            <span>💬 210 评论</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="article-thumb">
+                        <img src="https://picsum.photos/seed/photo1/400/300" alt="摄影">
+                    </div>
+                    <div class="article-content">
+                        <div class="article-meta">摄影教程 · 1周前</div>
+                        <h3 class="article-title">室内丝袜摄影布光技巧：如何拍出细腻的质感</h3>
+                        <p class="article-excerpt">想要拍出丝袜特有的光泽感和细腻纹理？关键在于光线的运用。本文分享三种适合室内拍摄的布光方案，包括柔光箱的使用、反光板的位置以及如何通过侧逆光突出面料的层次。</p>
+                        <div class="article-footer">
+                            <span>👁️ 890 阅读</span>
+                            <span>💬 45 评论</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>丝袜社区</h4>
+                <p style="color: #999; font-size: 0.9rem; line-height: 1.8;">
+                    我们致力于为丝袜爱好者提供最专业的交流平台。在这里，您可以分享穿搭心得、探讨材质知识、欣赏优质摄影作品，结识志同道合的朋友。
+                </p>
+            </div>
+            <div class="footer-col">
+                <h4>探索</h4>
+                <ul>
+                    <li><a href="#">最新发布</a></li>
+                    <li><a href="#">热门榜单</a></li>
+                    <li><a href="#">达人榜</a></li>
+                    <li><a href="#">分类浏览</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>社区</h4>
+                <ul>
+                    <li><a href="#">用户协议</a></li>
+                    <li><a href="#">隐私政策</a></li>
+                    <li><a href="#">投稿指南</a></li>
+                    <li><a href="#">联系我们</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>关注我们</h4>
+                <ul>
+                    <li><a href="#">微信公众号</a></li>
+                    <li><a href="#">新浪微博</a></li>
+                    <li><a href="#">小红书</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 丝袜社区 版权所有 | 仅供交流与学习使用</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
