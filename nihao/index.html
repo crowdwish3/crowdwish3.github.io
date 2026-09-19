@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>你好 中校先生-经典硬汉侦探小说与影视改编作品全集</title>
+    <meta name="description" content="你好 中校先生，阿尔贝·加缪经典长篇小说。本站提供正版电子书阅读、有声读物试听、影视改编作品介绍及深度书评分析，带您走进莫尔索与中校的荒诞世界。">
+    <meta name="keywords" content="你好 中校先生, 加缪, 莫尔索, 荒诞派小说, 电子书, 有声读物, 影视改编">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --bg-color: #f4f1ea;
+            --paper-color: #fffbf0;
+            --text-primary: #2c2c2c;
+            --text-secondary: #666;
+            --accent-color: #8b0000; /* 深红，象征严肃与激情 */
+            --border-color: #e0dcd5;
+            --font-serif: "Songti SC", "SimSun", "Times New Roman", serif;
+            --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            --spacing-unit: 1rem;
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: var(--font-sans);
+            line-height: 1.6;
+            background-image: linear-gradient(to bottom, #f4f1ea 0%, #e8e4db 100%);
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Layout */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        /* Header */
+        header {
+            background-color: var(--paper-color);
+            border-bottom: 1px solid var(--border-color);
+            padding: 1.5rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-serif);
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--text-primary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo span {
+            color: var(--accent-color);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            font-size: 1rem;
+            color: var(--text-secondary);
+            font-weight: 500;
+        }
+
+        nav a:hover, nav a.active {
+            color: var(--accent-color);
+        }
+
+        .btn-read {
+            background-color: var(--accent-color);
+            color: white;
+            padding: 0.6rem 1.5rem;
+            border-radius: 4px;
+            font-size: 0.95rem;
+            transition: background-color 0.3s;
+        }
+
+        .btn-read:hover {
+            background-color: #a50000;
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 4rem 0;
+            text-align: center;
+            background: radial-gradient(circle at center, #fff 0%, #f4f1ea 70%);
+        }
+
+        .hero h1 {
+            font-family: var(--font-serif);
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+            letter-spacing: 2px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-secondary);
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+
+        .quote-box {
+            background-color: rgba(139, 0, 0, 0.05);
+            border-left: 4px solid var(--accent-color);
+            padding: 1.5rem;
+            max-width: 800px;
+            margin: 0 auto;
+            font-family: var(--font-serif);
+            font-style: italic;
+            font-size: 1.1rem;
+            color: #444;
+        }
+
+        /* Main Content Grid */
+        .main-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+            padding: 3rem 0;
+        }
+
+        /* Section Styles */
+        section {
+            margin-bottom: 3rem;
+        }
+
+        .section-title {
+            font-family: var(--font-serif);
+            font-size: 1.8rem;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+        }
+
+        .section-title a {
+            font-size: 0.9rem;
+            color: var(--accent-color);
+            font-family: var(--font-sans);
+            font-weight: normal;
+        }
+
+        /* Book Card */
+        .book-card {
+            background-color: var(--paper-color);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .book-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+        }
+
+        .book-cover {
+            width: 140px;
+            flex-shrink: 0;
+            background-color: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .book-cover img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .book-info {
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .book-title {
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            font-family: var(--font-serif);
+        }
+
+        .book-meta {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .book-desc {
+            font-size: 0.95rem;
+            color: #555;
+            margin-bottom: 1rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .book-tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background-color: #eee;
+            font-size: 0.75rem;
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
+            color: #666;
+        }
+
+        /* Sidebar */
+        .sidebar-widget {
+            background-color: var(--paper-color);
+            border: 1px solid var(--border-color);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        .widget-title {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            border-left: 3px solid var(--accent-color);
+            padding-left: 0.8rem;
+        }
+
+        .info-list li {
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px dashed #eee;
+        }
+
+        .info-list li:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+
+        .info-label {
+            display: block;
+            font-size: 0.85rem;
+            color: #888;
+            margin-bottom: 0.3rem;
+        }
+
+        .info-value {
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        /* Chapters List */
+        .chapter-list {
+            counter-reset: chapter;
+        }
+
+        .chapter-item {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            border-bottom: 1px solid #eee;
+            transition: background 0.2s;
+        }
+
+        .chapter-item:hover {
+            background-color: #fafafa;
+        }
+
+        .chapter-item::before {
+            counter-increment: chapter;
+            content: counter(chapter);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            background-color: var(--accent-color);
+            color: white;
+            border-radius: 50%;
+            font-size: 0.8rem;
+            margin-right: 1rem;
+            font-family: var(--font-sans);
+        }
+
+        .chapter-link {
+            flex-grow: 1;
+            font-size: 1rem;
+        }
+
+        .chapter-link:hover {
+            color: var(--accent-color);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c2c2c;
+            color: #aaa;
+            padding: 4rem 0 2rem;
+            margin-top: 4rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-col h4 {
+            color: white;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 0.8rem;
+        }
+
+        .footer-col ul li a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #444;
+            padding-top: 2rem;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            nav ul {
+                gap: 1rem;
+                font-size: 0.9rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+
+            .book-card {
+                flex-direction: column;
+            }
+
+            .book-cover {
+                width: 100%;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container header-inner">
+        <a href="#" class="logo">你好<span>中校先生</span></a>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">首页</a></li>
+                <li><a href="#">电子书</a></li>
+                <li><a href="#">有声读物</a></li>
+                <li><a href="#">影视改编</a></li>
+            </ul>
+        </nav>
+        <a href="#read" class="btn-read">开始阅读</a>
+    </div>
+</header>
+
+<main class="container">
+    
+    <section class="hero">
+        <h1>你好，中校先生</h1>
+        <p>加缪最著名的长篇小说，荒诞哲学的深刻注脚。一个关于审判、命运与存在主义的故事。</p>
+        <div class="quote-box">
+            “在隆冬，我终于知道，我身上有一个不可战胜的夏天。”
+        </div>
+    </section>
+
+    <div class="main-content">
+        <!-- Left Column: Content -->
+        <div class="content-column">
+            
+            <!-- Book Introduction -->
+            <section>
+                <div class="section-title">
+                    <h2>作品简介</h2>
+                    <a href="#">查看详情 &rarr;</a>
+                </div>
+                <article class="book-card">
+                    <div class="book-cover">
+                        <!-- Placeholder for book cover using a solid color with text to ensure standalone -->
+                        <img src="https://picsum.photos/seed/lawyer/280/400.jpg" alt="你好中校先生封面">
+                    </div>
+                    <div class="book-info">
+                        <h3 class="book-title">你好，中校先生</h3>
+                        <div class="book-meta">作者：[法] 阿尔贝·加缪 | 类型：存在主义小说</div>
+                        <p class="book-desc">
+                            小说讲述了主人公默尔索在母亲去世后，在海滩上意外射杀了一个阿拉伯人。由于他在法庭上表现出冷漠与疏离，被检察官和神甫视为道德败坏的典型，最终被判处死刑。故事通过默尔索的视角，探讨了法律、宗教、社会规范与个人真实感受之间的冲突。
+                        </p>
+                        <div class="book-tags">
+                            <span class="tag">荒诞主义</span>
+                            <span class="tag">审判</span>
+                            <span class="tag">存在主义</span>
+                            <span class="tag">社会批判</span>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <!-- Chapters -->
+            <section id="read">
+                <div class="section-title">
+                    <h2>在线阅读</h2>
+                    <a href="#">目录列表 &rarr;</a>
+                </div>
+                <div class="chapter-list">
+                    <a href="#" class="chapter-item">
+                        <span class="chapter-link">第一章：母亲</span>
+                    </a>
+                    <a href="#" class="chapter-item">
+                        <span class="chapter-link">第二章：海滩</span>
+                    </a>
+                    <a href="#" class="chapter-item">
+                        <span class="chapter-link">第三章：监狱</span>
+                    </a>
+                    <a href="#" class="chapter-item">
+                        <span class="chapter-link">第四章：审判</span>
+                    </a>
+                    <a href="#" class="chapter-item">
+                        <span class="chapter-link">第五章：神甫</span>
+                    </a>
+                    <a href="#" class="chapter-item">
+                        <span class="chapter-link">第六章：处决</span>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Related Info -->
+            <section>
+                <div class="section-title">
+                    <h2>创作背景与解读</h2>
+                </div>
+                <article style="font-size: 0.95rem; color: #555; line-height: 1.8;">
+                    <p>《你好，中校先生》是加缪的第一部长篇小说，出版于1942年。加缪曾坦言，这本书是他试图为自己搭建的“第一哲学”。小说通过一个看似偶然的杀人事件，揭示了人类社会对“正常”与“异常”的界定是多么脆弱。</p>
+                    <p style="margin-top: 1rem;">“中校”在书中不仅是默尔索父亲的形象，更象征着世俗社会中的权威、法律与道德秩序。默尔索拒绝按照社会期待去扮演“悲伤的儿子”或“悔过的罪犯”，这种真诚反而激怒了社会。本书不仅是文学经典，更是理解20世纪人类精神困境的重要文本。</p>
+                </article>
+            </section>
+        </div>
+
+        <!-- Right Column: Sidebar -->
+        <aside class="sidebar-column">
+            
+            <!-- Book Details Widget -->
+            <div class="sidebar-widget">
+                <h3 class="widget-title">作品档案</h3>
+                <ul class="info-list">
+                    <li>
+                        <span class="info-label">出版年份</span>
+                        <span class="info-value">1942年</span>
+                    </li>
+                    <li>
+                        <span class="info-label">原著语言</span>
+                        <span class="info-value">法语</span>
+                    </li>
+                    <li>
+                        <span class="info-label">中文译者</span>
+                        <span class="info-value">柳鸣九 等</span>
+                    </li>
+                    <li>
+                        <span class="info-label">所属系列</span>
+                        <span class="info-value">荒诞三部曲</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Audio Player Widget -->
+            <div class="sidebar-widget">
+                <h3 class="widget-title">有声试听</h3>
+                <div style="background: #eee; height: 100px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; color: #888;">
+                    播放器占位符
+                </div>
+                <p style="font-size: 0.9rem; color: #666;">点击试听加缪作品的经典有声朗读片段，感受文字的韵律。</p>
+            </div>
+
+            <!-- Related Works -->
+            <div class="sidebar-widget">
+                <h3 class="widget-title">加缪其他作品</h3>
+                <ul class="info-list">
+                    <li>
+                        <a href="#" style="font-weight: 500;">局外人</a>
+                        <div style="font-size: 0.8rem; color: #999; margin-top: 4px;">同名短篇小说</div>
+                    </li>
+                    <li>
+                        <a href="#" style="font-weight: 500;">西西弗神话</a>
+                        <div style="font-size: 0.8rem; color: #999; margin-top: 4px;">哲学随笔</div>
+                    </li>
+                    <li>
+                        <a href="#" style="font-weight: 500;">鼠疫</a>
+                        <div style="font-size: 0.8rem; color: #999; margin-top: 4px;">长篇小说</div>
+                    </li>
+                </ul>
+            </div>
+
+        </aside>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>关于作品</h4>
+                <ul>
+                    <li><a href="#">作者生平</a></li>
+                    <li><a href="#">创作历程</a></li>
+                    <li><a href="#">获得荣誉</a></li>
+                    <li><a href="#">影视改编</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>阅读指南</h4>
+                <ul>
+                    <li><a href="#">阅读顺序</a></li>
+                    <li><a href="#">主题分析</a></li>
+                    <li><a href="#">常见问题</a></li>
+                    <li><a href="#">书评投稿</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>法律声明</h4>
+                <ul>
+                    <li><a href="#">版权信息</a></li>
+                    <li><a href="#">隐私政策</a></li>
+                    <li><a href="#">使用条款</a></li>
+                    <li><a href="#">联系站长</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 你好中校先生阅读站. All Rights Reserved. 本站内容仅供学习交流使用，非官方授权平台。</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+  </html>
