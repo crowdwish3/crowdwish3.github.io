@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="酒缸批发-专业酒缸酒坛批发厂家，提供大型酒缸、陶瓷酒坛、发酵缸、泡菜缸等批发服务。支持来图定制、厂家直销，材质包含陶瓷、土陶、玻璃、不锈钢，适用于酒厂、酿酒坊、餐饮酒店及家庭收藏。">
+    <meta name="keywords" content="酒缸批发,酒坛批发,陶瓷酒缸,土陶酒缸,酿酒设备,酒缸厂家,酒缸定制,发酵缸">
+    <title>酒缸批发-厂家直销陶瓷酒坛发酵缸与定制服务</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #8B4513;
+            --secondary-color: #D2691E;
+            --accent-color: #F4A460;
+            --text-dark: #333333;
+            --text-light: #666666;
+            --bg-light: #F9F7F2;
+            --white: #FFFFFF;
+            --border-radius: 8px;
+            --container-width: 1200px;
+            --spacing-section: 60px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        /* Utility Classes */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 4px;
+            font-weight: 600;
+            cursor: pointer;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(139, 69, 19, 0.3);
+        }
+
+        .btn-outline {
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+            background: transparent;
+        }
+
+        .btn-outline:hover {
+            background-color: var(--primary-color);
+            color: var(--white);
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            font-size: 2.2rem;
+            color: var(--text-dark);
+            margin-bottom: 10px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background-color: var(--secondary-color);
+            margin: 10px auto 0;
+        }
+
+        .section-title p {
+            color: var(--text-light);
+            font-size: 1.1rem;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-top {
+            background-color: var(--primary-color);
+            color: var(--white);
+            font-size: 0.9rem;
+            padding: 8px 0;
+            text-align: center;
+        }
+
+        .header-main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+        }
+
+        .logo span {
+            color: var(--secondary-color);
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 30px;
+        }
+
+        .nav-menu a {
+            font-weight: 500;
+            color: var(--text-dark);
+            position: relative;
+        }
+
+        .nav-menu a:hover, .nav-menu a.active {
+            color: var(--secondary-color);
+        }
+
+        .nav-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--secondary-color);
+            transition: width 0.3s;
+        }
+
+        .nav-menu a:hover::after {
+            width: 100%;
+        }
+
+        .header-contact {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .contact-info {
+            text-align: right;
+        }
+
+        .contact-info small {
+            display: block;
+            color: var(--text-light);
+            font-size: 0.85rem;
+        }
+
+        .contact-info strong {
+            color: var(--primary-color);
+            font-size: 1.1rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://picsum.photos/seed/winebarrel/1920/800') no-repeat center center/cover;
+            color: var(--white);
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 40px;
+            opacity: 0.9;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Features */
+        .features {
+            padding: var(--spacing-section) 0;
+            background-color: var(--white);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 30px;
+            border-radius: var(--border-radius);
+            background-color: var(--bg-light);
+            transition: transform 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            background-color: var(--white);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: var(--secondary-color);
+        }
+
+        .feature-card h3 {
+            margin-bottom: 15px;
+            color: var(--text-dark);
+        }
+
+        /* Products Showcase */
+        .products {
+            padding: var(--spacing-section) 0;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background-color: var(--white);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: all 0.3s ease;
+            border: 1px solid #eee;
+        }
+
+        .product-card:hover {
+            box-shadow: 0 10px 25px rgba(139, 69, 19, 0.15);
+        }
+
+        .product-image {
+            height: 220px;
+            overflow: hidden;
+            background-color: #f0f0f0;
+            position: relative;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .product-card:hover .product-image img {
+            transform: scale(1.05);
+        }
+
+        .product-tag {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: var(--secondary-color);
+            color: var(--white);
+            padding: 4px 10px;
+            font-size: 0.8rem;
+            border-radius: 4px;
+        }
+
+        .product-info {
+            padding: 20px;
+        }
+
+        .product-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--text-dark);
+        }
+
+        .product-desc {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 15px;
+            height: 40px;
+            overflow: hidden;
+        }
+
+        .product-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-top: 1px solid #eee;
+            padding-top: 15px;
+        }
+
+        .price {
+            font-size: 1.1rem;
+            color: var(--primary-color);
+            font-weight: 700;
+        }
+
+        .price small {
+            font-size: 0.8rem;
+            font-weight: 400;
+        }
+
+        /* Application Scenarios */
+        .scenarios {
+            padding: var(--spacing-section) 0;
+            background-color: var(--white);
+        }
+
+        .scenario-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+
+        .scenario-item {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+        }
+
+        .scenario-number {
+            font-size: 3rem;
+            font-weight: 800;
+            color: rgba(139, 69, 19, 0.1);
+            line-height: 1;
+        }
+
+        .scenario-content h3 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+        }
+
+        .scenario-content p {
+            color: var(--text-light);
+        }
+
+        /* FAQ Section */
+        .faq {
+            padding: var(--spacing-section) 0;
+            background-color: var(--bg-light);
+        }
+
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background-color: var(--white);
+            margin-bottom: 15px;
+            border-radius: var(--border-radius);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 20px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--secondary-color);
+        }
+
+        .faq-item.active .faq-question::after {
+            content: '-';
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+            padding: 0 20px;
+            color: var(--text-light);
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 200px;
+            padding-bottom: 20px;
+        }
+
+        /* CTA Banner */
+        .cta-banner {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 60px 0;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .cta-banner h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .cta-banner p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .cta-banner .btn {
+            background-color: var(--white);
+            color: var(--primary-color);
+        }
+
+        .cta-banner .btn:hover {
+            background-color: var(--accent-color);
+            color: var(--white);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c2c2c;
+            color: #ccc;
+            padding: 60px 0 20px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-col h4 {
+            color: var(--white);
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a:hover {
+            color: var(--accent-color);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #444;
+            padding-top: 20px;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .header-main {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .header-contact {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .scenario-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-menu {
+                gap: 15px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Bar -->
+    <div class="header-top">
+        全国发货 · 厂家直销 · 30天无理由退换
+    </div>
+
+    <!-- Header -->
+    <header>
+        <div class="container header-main">
+            <a href="#" class="logo">
+                <span>陶</span>坛世家
+            </a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#" class="active">首页</a></li>
+                    <li><a href="#products">酒缸批发</a></li>
+                    <li><a href="#scenarios">应用场景</a></li>
+                    <li><a href="#faq">常见问题</a></li>
+                    <li><a href="#contact">联系我们</a></li>
+                </ul>
+            </nav>
+            <div class="header-contact">
+                <div class="contact-info">
+                    <small>24小时服务热线</small>
+                    <strong>400-888-6666</strong>
+                </div>
+                <a href="#contact" class="btn btn-primary" style="padding: 8px 20px; font-size: 0.9rem;">立即询价</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>酒缸批发<br>打造您的专属酒窖</h1>
+            <p>专注陶瓷酒缸、土陶酒坛、不锈钢发酵缸生产十余年。支持来图定制、源头厂家直供，从几百斤到几十吨，满足各类酿酒、发酵及收藏需求。</p>
+            <div style="margin-top: 30px;">
+                <a href="#products" class="btn btn-primary">浏览产品系列</a>
+                <a href="#contact" class="btn btn-outline" style="color: #fff; border-color: #fff; margin-left: 10px;">获取报价方案</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>为什么选择我们</h2>
+                <p>源头厂家，品质保障，服务完善</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🏺</div>
+                    <h3>传统工艺</h3>
+                    <p>采用千年古法手工拉坯工艺，经1200度高温烧制，透气性好，锁香效果佳。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏭</div>
+                    <h3>源头厂家</h3>
+                    <p>自有陶瓷生产基地，无中间商差价，支持批量定制，价格更具竞争力。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚚</div>
+                    <h3>物流配送</h3>
+                    <p>全国主要城市可配送，专业木架包装，确保大型酒缸运输安全无损。</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✅</div>
+                    <h3>品质检测</h3>
+                    <p>每一件产品出厂前均经过严格的质量检测，无裂纹、无杂质，使用更放心。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-title">
+                <h2>热销酒缸批发系列</h2>
+                <p>满足不同规模酿造需求，规格齐全</p>
+            </div>
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <span class="product-tag">热销</span>
+                        <img src="https://picsum.photos/seed/teapot/400/300" alt="500斤土陶酒缸批发">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">500斤土陶酒缸</h3>
+                        <p class="product-desc">手工拉坯，釉面光亮，适合家庭酿酒坊或小型酒厂使用。</p>
+                        <div class="product-footer">
+                            <div class="price"><small>起批</small>¥80<span>/个</span></div>
+                            <a href="#contact" class="btn btn-outline" style="padding: 6px 15px; font-size: 0.85rem;">咨询</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 2 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <span class="product-tag">新品</span>
+                        <img src="https://picsum.photos/seed/jar/400/300" alt="1000斤发酵缸">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">1000斤发酵缸</h3>
+                        <p class="product-desc">加厚内胆，耐酸碱，专为酱香型白酒发酵设计。</p>
+                        <div class="product-footer">
+                            <div class="price"><small>起批</small>¥150<span>/个</span></div>
+                            <a href="#contact" class="btn btn-outline" style="padding: 6px 15px; font-size: 0.85rem;">咨询</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 3 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <span class="product-tag">定制</span>
+                        <img src="https://picsum.photos/seed/stein/400/300" alt="2000斤储酒坛">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">2000斤储酒坛</h3>
+                        <p class="product-desc">双耳设计，便于搬运，长时间储存酒质更香。</p>
+                        <div class="product-footer">
+                            <div class="price"><small>起批</small>¥280<span>/个</span></div>
+                            <a href="#contact" class="btn btn-outline" style="padding: 6px 15px; font-size: 0.85rem;">咨询</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Product 4 -->
+                <article class="product-card">
+                    <div class="product-image">
+                        <span class="product-tag">不锈钢</span>
+                        <img src="https://picsum.photos/seed/steel/400/300" alt="不锈钢储酒罐">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">304不锈钢储酒罐</h3>
+                        <p class="product-desc">食品级材质，耐腐蚀，适合现代化酒厂液体储存。</p>
+                        <div class="product-footer">
+                            <div class="price"><small>起批</small>¥1200<span>/个</span></div>
+                            <a href="#contact" class="btn btn-outline" style="padding: 6px 15px; font-size: 0.85rem;">咨询</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="#" class="btn btn-primary">查看更多产品规格</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scenarios Section -->
+    <section id="scenarios" class="scenarios">
+        <div class="container">
+            <div class="section-title">
+                <h2>广泛的应用场景</h2>
+                <p>无论是传统酿造还是现代储存，我们都能提供解决方案</p>
+            </div>
+            <div class="scenario-grid">
+                <div class="scenario-item">
+                    <div class="scenario-number">01</div>
+                    <div class="scenario-content">
+                        <h3>酒厂酿造</h3>
+                        <p>适用于酱香、浓香、清香型白酒的发酵与储存，利用陶缸微孔透气性，促进酒体老熟。</p>
+                    </div>
+                </div>
+                <div class="scenario-item">
+                    <div class="scenario-number">02</div>
+                    <div class="scenario-content">
+                        <h3>餐饮酒店</h3>
+                        <p>提供各类规格的储酒缸，用于酒店后厨的调味品发酵及特色酒水展示，提升餐饮档次。</p>
+                    </div>
+                </div>
+                <div class="scenario-item">
+                    <div class="scenario-number">03</div>
+                    <div class="scenario-content">
+                        <h3>家庭收藏</h3>
+                        <p>精美包装的500斤-1000斤酒缸，适合收藏老酒、酱料腌制，打造家庭酒窖。</p>
+                    </div>
+                </div>
+                <div class="scenario-item">
+                    <div class="scenario-number">04</div>
+                    <div class="scenario-content">
+                        <h3>食品加工</h3>
+                        <p>酸菜缸、泡菜缸、酿造缸，满足各类食品发酵工艺需求，保持食材原味。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-title">
+                <h2>常见问题解答</h2>
+                <p>关于酒缸批发、运输及使用的疑问</p>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">酒缸发货如何包装？</div>
+                    <div class="faq-answer">
+                        <p>我们采用专业的木架包装，内部填充泡沫和气泡膜，确保酒缸在运输过程中不磕碰、不破裂。大容量酒缸通常采用分体运输或特殊加固处理。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">可以定制尺寸和LOGO吗？</div>
+                    <div class="faq-answer">
+                        <p>支持来图定制。我们可以根据您的要求制作特定尺寸的酒缸，并在缸体表面印刷品牌LOGO或文字，满足品牌宣传需求。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">陶瓷酒缸和不锈钢酒缸哪个好？</div>
+                    <div class="faq-answer">
+                        <p>各有优劣。陶瓷缸透气性好，适合长期发酵和储存老酒，能让酒体更香；不锈钢缸耐腐蚀、易清洗、卫生，适合现代工业化生产。建议根据实际用途选择。</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">起批量是多少？</div>
+                    <div class="faq-answer">
+                        <p>为了方便客户试用和测试，我们通常接受少量批发。不同型号起批量略有不同，具体可咨询客服获取最新报价。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="cta-banner">
+        <div class="container">
+            <h2>需要定制您的酒缸方案吗？</h2>
+            <p>免费获取产品报价单与技术参数表，专业工程师一对一解答</p>
+            <a href="#contact" class="btn">立即咨询客服</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="padding: 60px 0;">
+        <div class="container">
+            <div class="section-title">
+                <h2>联系我们</h2>
+                <p>期待与您的合作，欢迎实地考察</p>
+            </div>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
+                <div>
+                    <h3 style="margin-bottom: 20px; color: var(--primary-color);">联系方式</h3>
+                    <ul style="line-height: 2;">
+                        <li><strong>电话：</strong> 400-888-6666</li>
+                        <li><strong>手机：</strong> 138-0000-0000</li>
+                        <li><strong>邮箱：</strong> sales@taotan.com</li>
+                        <li><strong>地址：</strong> 江苏省某某市陶瓷工业园区88号</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 style="margin-bottom: 20px; color: var(--primary-color);">工作时间</h3>
+                    <p>周一至周五：9:00 - 18:00</p>
+                    <p>周六：9:00 - 12:00</p>
+                    <p>周日及法定节假日休息</p>
+                    <br>
+                    <p style="font-size: 0.9rem; color: #666;">* 欢迎添加微信：TaoTanShiJia (备注：酒缸批发)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>陶坛世家</h4>
+                    <p style="font-size: 0.9rem; line-height: 1.8;">专注陶瓷酒缸生产与批发十余年，致力于为酒厂、餐饮及家庭用户提供高品质的储酒设备与解决方案。</p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速导航</h4>
+                    <ul>
+                        <li><a href="#products">酒缸批发</a></li>
+                        <li><a href="#products">酒坛定制</a></li>
+                        <li><a href="#products">发酵设备</a></li>
+                        <li><a href="#contact">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>产品分类</h4>
+                    <ul>
+                        <li><a href="#">500斤土陶缸</a></li>
+                        <li><a href="#">1000斤储酒坛</a></li>
+                        <li><a href="#">2000斤双耳缸</a></li>
+                        <li><a href="#">不锈钢储酒罐</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 陶坛世家酒缸批发网 版权所有 | 沪ICP备12345678号</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple FAQ Accordion Logic
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqItems = document.querySelectorAll('.faq-item');
+            
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    // Close other items
+                    faqItems.forEach(otherItem => {
+                        if (otherItem !== item) {
+                            otherItem.classList.remove('active');
+                        }
+                    });
+                    // Toggle current item
+                    item.classList.toggle('active');
+                });
+            });
+        });
+    </script>
+</body>
+                                                         </html>
